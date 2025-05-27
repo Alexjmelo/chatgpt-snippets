@@ -1,71 +1,57 @@
-# chatgpt-snippets README
+# Meu Plugin Incrível de Snippets para ChatGPT
 
-This is the README for your extension "chatgpt-snippets". After writing up a brief description, we recommend including the following sections.
+Este é um plugin para [descreva a plataforma, ex: VS Code] que permite gerar e inserir snippets de código do ChatGPT diretamente no seu editor, acelerando seu fluxo de trabalho.
 
-## Features
+## Funcionalidades
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+* Gera snippets de código baseados em prompts pré-definidos.
+* Integração direta com o ChatGPT (requer chave de API).
+* [Outras funcionalidades...]
 
-For example if there is an image subfolder under your extension project workspace:
+## Demonstração
 
-\!\[feature X\]\(images/feature-x.png\)
+![GIF do plugin em ação](link-para-seu-gif.gif)
+_Uma breve demonstração de como usar o plugin._
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Instalação
 
-## Requirements
+### Pré-requisitos
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+* [Node.js](https://nodejs.org/) (versão X.X ou superior)
+* [npm](https://docs.npmjs.com/cli/v9/commands/npm) ou [yarn](https://yarnpkg.com/)
+* [VS Code](https://code.visualstudio.com/) (se for uma extensão do VS Code)
 
-## Extension Settings
+### Passos
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/Alexjmelo/chatgpt-snippets.git](https://github.com/Alexjmelo/chatgpt-snippets.git)
+    cd chatgpt-snippets
+    ```
 
-For example:
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    # ou
+    # yarn install
+    ```
 
-This extension contributes the following settings:
+3.  **Configure sua chave de API OpenAI:**
+    Crie um arquivo `.env` na raiz do projeto e adicione sua chave:
+    ```
+    OPENAI_API_KEY=sua_nova_chave_aqui
+    ```
+    (Lembre-se de NUNCA commitar este arquivo!)
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+4.  **Execute o plugin:**
+    * **Para Extensões VS Code:** Abra o projeto no VS Code (`code .`) e pressione `F5` para iniciar uma nova janela de depuração do VS Code com a extensão carregada.
+    * **Para scripts Node.js:**
+        ```bash
+        npm start # ou node seu-arquivo-principal.js
+        ```
 
-## Known Issues
+## Como Usar
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+[Descreva aqui os passos para usar o plugin após a instalação. Ex: "Pressione `Ctrl+Shift+P` e digite 'Gerar Snippet ChatGPT'..." ou "Execute `npm run generate-snippet <prompt>`"]
 
 ---
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
